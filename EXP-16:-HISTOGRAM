@@ -1,0 +1,10 @@
+# Sample data
+marks <- c(88, 78, 25, 90, 67, 45, 88, 72, 55)
+
+# Histogram
+hist(marks,
+     main = "Histogram of Marks",
+     xlab = "Marks",
+     ylab = "Frequency",
+     col = "skyblue",
+     border = "black")
