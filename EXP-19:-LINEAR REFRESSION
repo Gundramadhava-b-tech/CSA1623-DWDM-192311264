@@ -1,0 +1,23 @@
+# Sample dataset
+names <- c("siri", "chru", "loki")
+age   <- c(23, 24, 25)
+marks <- c(88, 78, 25)
+
+df <- data.frame(names, age, marks)
+
+# Linear regression: Marks predicted by Age
+model <- lm(marks ~ age, data = df)
+
+# Display regression summary
+summary(model)
+
+# Plot scatter plot with regression line
+plot(df$age, df$marks,
+     main = "Linear Regression: Marks vs Age",
+     xlab = "Age",
+     ylab = "Marks",
+     col = "blue",
+     pch = 19)
+
+# Add regression line
+abline(model, col = "red", lwd = 2)
