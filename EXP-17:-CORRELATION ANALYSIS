@@ -1,0 +1,12 @@
+# Sample data
+names <- c("siri", "chru", "loki")
+age   <- c(23, 24, 25)
+marks <- c(88, 78, 25)
+
+df <- data.frame(names, age, marks)
+
+# Correlation analysis between age and marks
+correlation <- cor(df$age, df$marks)
+
+# Print result
+cat("Correlation between Age and Marks:", correlation, "\n")
