@@ -1,0 +1,14 @@
+# Sample data
+names <- c("siri", "chru", "loki")
+age   <- c(23, 24, 25)
+marks <- c(88, 78, 25)
+
+df <- data.frame(names, age, marks)
+
+# Scatter plot: Age vs Marks
+plot(df$age, df$marks,
+     main = "Scatter Plot of Age vs Marks",
+     xlab = "Age",
+     ylab = "Marks",
+     col = "blue",
+     pch = 19)   # pch=19 gives solid dots
