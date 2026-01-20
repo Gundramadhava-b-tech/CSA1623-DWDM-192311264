@@ -1,0 +1,18 @@
+# Sample dataset
+names <- c("siri", "chru", "loki")
+age   <- c(23, 24, 25)
+marks <- c(88, 78, 25)
+hours <- c(5, 6, 2)   # study hours (extra predictor)
+
+df <- data.frame(names, age, marks, hours)
+
+# Multiple regression: Marks predicted by Age and Study Hours
+model <- lm(marks ~ age + hours, data = df)
+
+# Display regression summary
+summary(model)
+
+# Predicted values
+predicted <- predict(model, df)
+cat("Predicted Marks:\n")
+print(predicted)
