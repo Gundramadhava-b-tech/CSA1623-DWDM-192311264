@@ -1,0 +1,15 @@
+# Read Excel file
+diabetest1 <- read_excel("C:/Users/M.Geetha/Downloads/NARA.xlsx")
+
+# Extract Age column into a vector
+A <- c(diabetest1$Age)
+
+# Calculate mean and standard deviation
+Mean <- mean(A, na.rm = TRUE)   # add na.rm=TRUE to handle missing values
+Std  <- sd(A, na.rm = TRUE)
+
+# Compute Z-scores
+Zscore <- (A - Mean) / Std
+
+# Display Z-scores
+Zscore
