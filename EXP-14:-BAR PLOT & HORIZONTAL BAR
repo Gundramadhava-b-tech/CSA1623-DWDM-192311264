@@ -1,0 +1,20 @@
+# Sample data
+names <- c("siri", "mahi", "chiru")
+marks <- c(88, 78, 25)
+
+# Vertical bar plot
+barplot(marks,
+        names.arg = names,
+        col = "skyblue",
+        main = "Marks of Students",
+        xlab = "Names",
+        ylab = "Marks")
+
+# Horizontal bar plot
+barplot(marks,
+        names.arg = names,
+        col = "lightgreen",
+        main = "Marks of Students (Horizontal)",
+        xlab = "Marks",
+        ylab = "Names",
+        horiz = TRUE)
